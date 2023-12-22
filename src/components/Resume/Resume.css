@@ -1,0 +1,131 @@
+.resume {
+    background-color:rgba(241, 236, 229, 0.082);
+}
+.headingsr h3{
+    color: var(--rm-color-grayscale-title);
+        font-size: 2.3rem;
+        font-family: 'Krona One', sans-serif;
+        text-transform: uppercase;
+}
+.headingsr p{
+    opacity: 0.7;
+}
+.resume .resume-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 7rem;
+}
+
+.resume-row .columnr .sub-heading {
+    color: var(--rm-color-grayscale-title);
+    padding: 30px 0px 30px 0px;
+}
+
+.columnr .resume-contents {
+    padding-left: 30px;
+    border-left: 3px solid var(--rm-color-grayscale-title);
+}
+
+.resume-contents .boxr {
+    position: relative;
+    padding: 20px;
+    border-bottom: 5px solid #00000028;
+    border-radius: 5px;
+    background-color: #607b9a1e;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.resume-contents .boxr:nth-child(3) {
+    border-bottom: 0px;
+}
+
+.resume-contents .boxr::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 14px;
+    background-color: black;
+    top: 21px;
+    left: -30px;
+}
+
+.resume-contents .boxr::after {
+    content: '';
+    position: absolute;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent transparent var(--rm-color-grayscale-title);
+    top: 21px;
+    left: -18px;
+}
+
+.resume-contents .boxr h4 {
+    position: relative;
+    color: var(--rm-color-grayscale-title);
+}
+
+.resume-contents .boxr h3 {
+    font-size: 19px;
+    padding: 10px 0px 6px;
+    color: var(--rm-color-grayscale-title);
+    margin-top: 2px;
+}
+
+.resume-contents .boxr p {
+    margin-top: 3px;
+    line-height: 1.3;
+    opacity: 0.7;
+    color: var(--rm-color-grayscale-title);
+    font-size: 15px;
+}
+
+.resume-contents .boxr h5 {
+    position: relative;
+    margin-top: 12px;
+    right: 0;
+    text-align: right;
+    color: var(--rm-color-grayscale-title);
+    font-weight: 700;
+    opacity: 0.8;
+}
+.loaderr {
+    margin: 2.5% 0;
+    width: 150px;
+    height: 8px;
+    background:
+        linear-gradient(#0F2145 0 0) 0/0% no-repeat #0f21456e;
+    animation: l1 2s infinite linear;
+}
+
+@keyframes l1 {
+    100% {
+        background-size: 100%
+    }
+}
+@media(max-width: 768px) {
+
+    /* Resume Section */
+    .resume .resume-row {
+        flex-direction: column;
+    }
+
+    .resume-row .column-right {
+        margin-top: 30px;
+    }
+
+}
+
+/*   === Screen Size 600px or Smaller  ===   */
+@media(max-width: 600px) {
+}
+
+/*   === Screen Size 550px or Smaller  ===   */
+@media(max-width: 550px) {
+
+}
+
+/*   === Screen Size 350px or Smaller  ===   */
+@media(max-width: 350px) {
+
+}

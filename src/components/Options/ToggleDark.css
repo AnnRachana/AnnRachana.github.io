@@ -1,0 +1,29 @@
+/* Other styles */
+
+.toggle-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dark-mode-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode-button:hover {
+    background-color: #555;
+}
+
+/* Dark Mode specific styles */
+.dark-mode {
+    /* Update styles for elements in dark mode */
+    background-color: #111 !important;
+    color: #fff;
+}
+
+/* Update other styles as needed */

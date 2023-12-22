@@ -1,0 +1,146 @@
+#footer {
+    background:linear-gradient(#080813f0,#080813f6) ,url(/src/components/images/logoblack.png);
+    background-size:cover ;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background: var(--rm-color-grayscale-off-black); */
+}
+.footer {
+    padding: 2.5rem 0;
+        border-top: 1.5px solid #ffffff2f;
+    color: #fff;
+}
+
+.footer-title {
+    margin: 1rem 0;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.footer .colf {
+    text-align: start;
+    padding: 1rem 0;
+}
+.footer .colf .textf{
+    opacity: 0.6;
+    
+}
+
+.footer .colf:first-child .textf {
+    width: 80%;
+}
+
+.social-linksf {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.social-linksf a {
+    background: rgba(38, 49, 85, 0.348);
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 1.5rem 0.5rem;
+    color: #ffff;
+}
+
+.social-linksf a:hover {
+    background: var(--green);
+}
+
+.footer-linksf a {
+    display: block;
+    text-transform: capitalize;
+    padding: 0.2rem 0;
+    transition: var(--transition);
+    color: #fff;
+}
+.footer-linksf a i{
+    margin-right: 10px;
+
+}
+.footer-linksf a .fas {
+    display: none;
+
+}
+
+.footer-linksf a:hover {
+    color: #fff;
+    font-weight: 700;
+}
+
+.footer .colf:last-child div {
+    padding: 0.2rem 0;
+}
+
+.footer .colf:last-child .fas {
+    color: #bcbaba;
+    margin: 0.2rem 0;
+    padding-right: 0.5rem;
+}
+
+.footer-text .textf {
+    opacity: 0.5;
+    text-align: center;
+    font-size: 0.8rem;
+    color:#ffffff91;
+}
+
+
+
+
+
+
+/* #### Media Queries #### */
+@media screen and (min-width: 500px) {
+    .footer .colf {
+            text-align: start;
+            padding: 1rem 0;
+        }
+ 
+}
+
+@media screen and (min-width: 768px) {
+
+    /* footer */
+    .footer .rowf {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+ 
+    }
+
+
+}
+
+@media screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+    .footer .rowf {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer .rowf .colf {
+        text-align: left;
+    }
+
+    .footer .colf:first-child .textf {
+        margin: 0;
+    }
+
+    .social-linksf {
+        justify-content: flex-start;
+    }
+
+    .footer-linksf a .fas {
+        display: inline-block;
+    }
+
+}

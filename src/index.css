@@ -1,0 +1,19 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Amaranth',sans-serif;
+    
+}
+a {
+    text-decoration: none;
+}
+
+section {
+    padding: 80px 15%;
+    background: #F1F9FE;
+}

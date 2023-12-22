@@ -1,0 +1,608 @@
+/* DONE */
+.about {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 8rem;
+    overflow: hidden;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 800;
+
+}
+
+.about .about-img {
+    position: relative;
+    display: grid;
+    place-items: center;
+
+
+}
+
+.about .about-img .aboutHero {
+    animation: zoomInOuta 3s infinite ease-in-out alternate;
+    width: 20vw;
+    height: auto;
+    border: 1px solid var(--rm-color-grayscale-off-black);
+    border-radius: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3)0px 5px 10px 0,
+        rgba(60, 64, 67, 0.15)0px 5px 9px 5px;
+}
+
+@keyframes zoomInOuta {
+    0% {
+        transform: scale(1.51);
+        transform: translateY(-1%);
+    }
+
+    50% {
+        transform: scale(1.05);
+        transform: translateY(1%);
+    }
+
+    100% {
+        transform: scale(1.05);
+    }
+
+}
+
+.about-img .ring {
+    opacity: 0.3;
+    width: 50%;
+    position: absolute;
+    bottom: 10%;
+    left: -20%;
+    filter: drop-shadow(-1rem 1rem 10px #0F2145);
+}
+
+.about-img .circle {
+    width: 50%;
+    height: 15%;
+    position: absolute;
+    top: -2%;
+    right: -10%;
+    z-index: 30;
+    filter: drop-shadow(-1rem 1rem 10px #ffffff);
+}
+
+
+.about-content {
+    padding: 3rem 0;
+}
+
+.about-content h1 {
+
+    font-size: 1.3rem;
+    font-family: "Krona One", sans-serif;
+    opacity: 0.8;
+    color: var(--rm-color-grayscale-title);
+}
+
+.about-content h3 {
+    white-space: nowrap;
+    font-family: "Krona One", sans-serif;
+    color: var(--rm-color-grayscale-title);
+    font-size: 4.5rem;
+    line-height: 3rem;
+    margin: 1.5rem 0;
+}
+
+.about-content p {
+    opacity: 0.7;
+    font-weight: 600;
+    /* text-align: justify; */
+    color: var(--rm-color-grayscale-title);
+}
+
+.text-box p {
+    color: var(--rm-color-grayscale-title);
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+.about-btn {
+    margin: .8rem 0;
+}
+
+.about-btn button {
+    background: transparent;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    opacity: 0.7;
+    color: var(--rm-color-grayscale-off-black);
+    box-shadow: rgba(60, 64, 67, 0.3)0px 1px 2px 0,
+        rgba(60, 64, 67, 0.15)0px 2px 6px 2px;
+    margin-right: .5rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+
+.about-btn button.active {
+    
+    box-shadow: none;
+    color: var(--rm-color-grayscale-off-black);
+}
+
+.text-box {
+    margin: .8rem 0;
+}
+
+.text-box span {
+    opacity: 0.4;
+    color: var(--rm-color-grayscale-title);
+}
+
+.content-btn>.content:not(:first-child) {
+    display: none;
+}
+
+.about-btn button:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.buttona {
+    margin: 1rem 0;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    background: var(--rm-color-grayscale-title);
+    padding-block: 0.8rem;
+    padding-inline: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    gap: 10px;
+    font-weight: 500;
+    outline: none;
+    overflow: hidden;
+    font-size: 17px;
+}
+
+.buttona:hover {
+    transform: scale(1.05);
+    opacity: 0.6;
+    background: var(--rm-color-grayscale-title);
+}
+
+.buttona:hover .icona {
+    transform: translate(4px);
+}
+
+.buttona:hover::before {
+    animation: shine 1.5s ease-out infinite;
+}
+
+.buttona::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(120deg,
+            rgba(255, 255, 255, 0) 30%,
+            rgba(255, 255, 255, 0.626),
+            rgba(255, 255, 255, 0) 70%);
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+
+    animation: shinea 2s linear infinite;
+}
+
+#buttona {
+    margin-left: 2rem;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--rm-color-grayscale-title);
+    gap: 10px;
+    font-weight: 500;
+    outline: none;
+    overflow: hidden;
+    font-size: 17px;
+}
+
+#buttona::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(120deg,
+            rgba(255, 255, 255, 0) 30%,
+            rgba(76, 100, 132, 0.137),
+            rgba(255, 255, 255, 0) 70%);
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+
+    animation: shinea 2s linear infinite;
+}
+
+@keyframes shinea {
+    0% {
+        left: -100px;
+    }
+
+    60% {
+        left: 100%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+/* .spansc{
+    padding: 2rem;
+    color: var(--rm-color-grayscale-title);
+} */
+.social-linksa,
+.flex-centera {
+    position: relative;
+    /* position: static; */
+    /* margin: 1.5rem 0; */
+    display: flex;
+    align-items: center;
+    /* z-index: 99; */
+    
+}
+
+.social-btna {
+
+    cursor: pointer;
+    height: 45px;
+    width: 45px;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    background: var(--rm-color-grayscale-title);
+    margin: 5px;
+    transition: 0.3s;
+    justify-content: center;
+}
+
+.social-btna svg {
+    height: 24px;
+    width: 24px;
+}
+
+.social-btna span {
+    font-weight: bold;
+    font-size: 15px;
+    width: 0px;
+    overflow: hidden;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.social-btna:hover {
+    background: transparent;
+    color: var(--rm-color-grayscale-title);
+    border:3px solid  #0F2145;
+}
+
+/* .social-btna:hover span {
+    padding: 2px;
+    width: 80px;
+} */
+
+.loadera {
+    margin: 2.5% 0;
+    width: 150px;
+    height: 8px;
+    background:
+        linear-gradient(#0F2145 0 0) 0/0% no-repeat #0f21456e;
+    animation: l1 2s infinite linear;
+}
+
+@keyframes l1 {
+    100% {
+        background-size: 100%
+    }
+}
+
+
+
+
+
+
+/*======================= BrakPoints ============================ */
+
+
+
+
+
+
+@media (max-width: 576px) {
+    .about {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about .about-img {
+        width: 100%;
+
+    }
+
+    .about-content {
+        padding: 0;
+    }
+
+    .about .about-img .aboutHero {
+        width: 70%;
+    }
+
+    .about-img .ring {
+        width: 40%;
+        bottom: 20%;
+        left: -1%;
+    }
+
+    .about-img .circle {
+        width: 40%;
+        top: -2%;
+        right: -1%;
+    }
+
+
+    .about-content h1 {
+            /* white-space: nowrap; */
+        margin-top: 5%;
+        font-size: 1rem;
+    }
+
+    .about-content h3 {
+        white-space: wrap;
+        font-size: 2.5rem;
+        line-height: 2.2rem;
+    }
+
+    .about-content p {
+        font-size: 1rem;
+    }
+
+    .about-btn button {
+
+        font-size: 0.89rem;
+        padding: 8px 14px;
+    }
+
+    .buttona {
+        font-size: 15px;
+        padding: 1rem 1rem;
+        white-space: nowrap;
+        gap: 5px;
+    }
+
+    #buttona {
+        margin-left: 0.5rem;
+        font-size: 15px;
+        padding: 1rem 1rem;
+        white-space: nowrap;
+        gap: 5px;
+    }
+
+    .loadera {
+        margin-bottom: 2rem;
+    }
+
+    .social-linksa,
+    .flex-centera {
+        margin-top: 1rem;
+    }
+
+    /* .social-btna:hover {
+        width: 100px;
+        border-radius: 25px;
+    }
+
+    .social-btna:hover span {
+        padding: 5px;
+        width: 50px;
+    } */
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .about {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about .about-img {
+        width: 100%;
+    }
+
+    .about .about-img .aboutHero {
+        width: 50%;
+    }
+
+    .about-img .ring {
+        position: absolute;
+        width: 30%;
+        bottom: 20%;
+        left: 10%;
+    }
+
+    .about-img .circle {
+
+        width: 30%;
+        top: -2%;
+        right: 10%;
+    }
+
+    .about-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .about-content h3 {
+        white-space: nowrap;
+        font-size: 4rem;
+        line-height: 2.2rem;
+    }
+
+    .about-content p {
+        font-size: 1rem;
+    }
+
+    .about-btn button {
+        font-size: 0.9rem;
+        padding: 8px 14px;
+    }
+
+    .buttona {
+        font-size: 15px;
+        padding: 0.5rem 1rem;
+        white-space: nowrap;
+        gap: 5px;
+    }
+
+    #buttona {
+        margin-left: 0.5rem;
+        font-size: 15px;
+        padding: 0.5rem 1rem;
+        white-space: nowrap;
+        gap: 5px;
+    }
+
+    .loadera {
+        margin-bottom: 2rem;
+    }
+
+    .social-linksa,
+    .flex-centera {
+        margin-top: 1rem;
+    }
+
+    /* .social-btna:hover {
+        width: 100px;
+        border-radius: 25px;
+    }
+
+    .social-btna:hover span {
+        padding: 5px;
+        width: 50px;
+    } */
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .about {
+
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about .about-img {
+        width: 100%;
+    }
+
+    .about .about-img .aboutHero {
+        width: 50%;
+    }
+
+    .about-content h1 {
+        white-space: nowrap;
+        font-size: 1.5rem;
+    }
+
+    .about-content h3 {
+        white-space: nowrap;
+        font-size: 3rem;
+        line-height: 2.2rem;
+    }
+
+    .about-content p {
+        font-size: 1rem;
+    }
+
+    .about-img .ring {
+        width: 30%;
+        bottom: 20%;
+        left: 10%;
+    }
+
+    .about-img .circle {
+        width: 30%;
+        top: -2%;
+        right: 10%;
+    }
+
+    .about-btn button {
+        font-size: 0.9rem;
+        padding: 8px 14px;
+    }
+
+    .buttona {
+        font-size: 15px;
+        padding: 0.5rem 1rem;
+        white-space: nowrap;
+        gap: 5px;
+    }
+
+    #buttona {
+        font-size: 15px;
+
+        padding: 0.5rem 1rem;
+        white-space: nowrap;
+        gap: 5px;
+
+    }
+
+    .loadera {
+        margin-bottom: 1rem;
+    }
+
+    .social-linksa,
+    .flex-centera {
+        margin-top: 1rem;
+    }
+
+    .social-btna:hover {
+        width: 120px;
+        border-radius: 25px;
+    }
+
+    .social-btna:hover span {
+        padding: 5px;
+        width: 50px;
+    }
+
+    .text-box span {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+    .about {
+    
+/* background-color: #0F2145; */
+            gap: 5rem;
+        }
+    .about-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .about-content h3 {
+        white-space: nowrap;
+    }
+
+    /* .social-btna:hover {
+        width: 100px;
+        border-radius: 25px;
+    }
+
+    .social-btna:hover span {
+        padding: 5px;
+        width: 50px;
+    } */
+}
