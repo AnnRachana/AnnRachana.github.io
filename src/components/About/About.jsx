@@ -14,14 +14,13 @@ import circleImg from "../images/sginbla.png";
 
 const About = () => {
   const handleDownload = () => {
-    
     const downloadLink = document.createElement("a");
-    downloadLink.href = CVpdf; 
+    downloadLink.href = CVpdf;
     downloadLink.download = "AnnRachanaCV.pdf";
-    downloadLink.target = "_blank"; 
-    document.body.appendChild(downloadLink); 
-    downloadLink.click(); 
-    document.body.removeChild(downloadLink); 
+    downloadLink.target = "_blank";
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
   };
 
   useEffect(() => {
@@ -53,7 +52,6 @@ const About = () => {
     <section className="about" id="about">
       <div className="about-img">
         <img src={aboutMeImg} alt="" className="aboutHero" />
-        <span className="spansc">FOLLOW ME ON</span>
         <div className="social-linksa">
           <a href="https://www.facebook.com/profile.php?id=100026367046442">
             <div id="twittera" className="social-btna flex-centera">

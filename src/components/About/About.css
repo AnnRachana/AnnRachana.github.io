@@ -8,6 +8,8 @@
     overflow: hidden;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 800;
+   
+        /* position: relative; */
 
 }
 
@@ -15,11 +17,13 @@
     position: relative;
     display: grid;
     place-items: center;
-
+    /* background-color: aqua; */
+    
 
 }
 
 .about .about-img .aboutHero {
+    
     animation: zoomInOuta 3s infinite ease-in-out alternate;
     width: 20vw;
     height: auto;
@@ -61,12 +65,13 @@
     position: absolute;
     top: -2%;
     right: -10%;
-    z-index: 30;
+    /* z-index: 30; */
     filter: drop-shadow(-1rem 1rem 10px #ffffff);
 }
 
 
 .about-content {
+    /* background: #0F2145; */
     padding: 3rem 0;
 }
 
@@ -88,8 +93,8 @@
 }
 
 .about-content p {
-    opacity: 0.7;
-    font-weight: 600;
+    opacity: 0.6;
+    font-weight: 800;
     /* text-align: justify; */
     color: var(--rm-color-grayscale-title);
 }
@@ -144,6 +149,7 @@
 }
 
 .buttona {
+
     margin: 1rem 0;
     position: relative;
     transition: all 0.3s ease-in-out;
@@ -188,8 +194,8 @@
     top: 0;
     left: -100px;
     opacity: 0.6;
-
     animation: shinea 2s linear infinite;
+
 }
 
 #buttona {
@@ -245,12 +251,11 @@
 } */
 .social-linksa,
 .flex-centera {
-    position: relative;
-    /* position: static; */
-    /* margin: 1.5rem 0; */
+
+    margin: 1.5rem 0;
     display: flex;
     align-items: center;
-    /* z-index: 99; */
+    z-index: 99;
     
 }
 
@@ -322,33 +327,35 @@
 
 @media (max-width: 576px) {
     .about {
+        
         flex-direction: column;
         gap: 2rem;
     }
 
     .about .about-img {
+        
         width: 100%;
 
     }
 
     .about-content {
+        
         padding: 0;
     }
 
-    .about .about-img .aboutHero {
+    .about .about-img .aboutHero {      
         width: 70%;
     }
 
     .about-img .ring {
-        width: 40%;
-        bottom: 20%;
-        left: -1%;
+        
+        width: 50%;
+        bottom: 15%;
+        left: 0%;
     }
 
     .about-img .circle {
-        width: 40%;
-        top: -2%;
-        right: -1%;
+        display: none;
     }
 
 
@@ -365,11 +372,11 @@
     }
 
     .about-content p {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     .about-btn button {
-
+            
         font-size: 0.89rem;
         padding: 8px 14px;
     }
@@ -393,11 +400,19 @@
         margin-bottom: 2rem;
     }
 
-    .social-linksa,
+    /* .social-linksa,
     .flex-centera {
         margin-top: 1rem;
-    }
-
+     
+    } */
+        .social-linksa,
+        .flex-centera {
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            z-index: 99;
+    
+        }
     /* .social-btna:hover {
         width: 100px;
         border-radius: 25px;

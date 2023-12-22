@@ -9,6 +9,7 @@ import Service from './components/Services/Service'
 import'./App.css'
 import Contact from './components/Contact/Contact'
 import Resume from './components/Resume/Resume'
+// import AboutUs from './components/About/AboutUs'
 // import Blog from './components/Blog/Blog'
 
 
@@ -18,6 +19,7 @@ function App() {
       <ScrollToTop />
       <Navbar />
       <Home />
+      {/* <AboutUs/> */}
       <About />
       <Service />
       <Skills />
